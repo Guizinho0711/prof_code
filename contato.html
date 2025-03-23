@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
+
 <body>
-    <header>
-        <img src="img/Professor Ajax.png" alt="" width="890">
-        <nav>
+    <center><img src="img/Professor Ajax.png" alt="" width="890"></center>
+    <nav>
+        <center>
             <a href="index.html">Home</a> |
             <a href="musica.html">Músicas para programação</a> |
             <a href="aulas.html">Aula grátis</a> |
             <a href="planos.html">Planos</a> |
             <a href="contato.html">Contato</a> |
-        </nav>
+        </center>
+    </nav>
+
+    <main>
+        <center>
+            <form>
+                <h1>Contato com o Professor</h1>
+
+                <p>Nome: Professor Ajax</p>
+                <p>Número: (11) 99387-2890</p>
+                <p>Email: <a
+                        href="mailto:ajax.professor@cs.cruzeirodosul.edu.br">ajax.professor@cs.cruzeirodosul.edu.br</a>
+                </p>
+                <p>Instagram: <a href="https://instagram.com/ajax.professor" target="_blank">@ajax.professor</a></p>
+
+                <h2>Envie sua mensagem</h2>
+                <form action="mailto:ajax.professor@cs.cruzeirodosul.edu.br" method="post" enctype="text/plain">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+        </center>
+    </main>
     </header>
 
-</body> 
+</body>
